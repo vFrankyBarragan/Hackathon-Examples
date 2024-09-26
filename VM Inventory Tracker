@@ -1,0 +1,18 @@
+Hey everyone! Just starting out? Try building a VM Inventory Tracker with PowerCLI. Super easy and perfect for beginners! #VMwareExplore #Hackathon #BeginnerProjects
+
+See what you can build out from here. 
+
+# Connect to vCenter
+Connect-VIServer -Server vcenter_server_name -User username -Password password
+
+# Get all VMs and their properties
+$vmList = Get-VM | Select-Object Name, PowerState, NumCpu, MemoryMB, GuestOS, VMHost
+
+# Export the VM list to a CSV file
+$vmList | Export-Csv -Path "C:\path\to\your\file.csv" -NoTypeInformation
+
+# Display the VM list
+$vmList | Format-Table -AutoSize
+
+# Disconnect from vCenter
+Disconnect-VIServer -Confirm:$false
