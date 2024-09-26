@@ -1,6 +1,6 @@
-Hey everyone! Just starting out? Try building a VM Inventory Tracker with PowerCLI. Super easy and perfect for beginners! #VMwareExplore #Hackathon #BeginnerProjects
+#Hey everyone! Just starting out? Try building a VM Inventory Tracker with PowerCLI. Super easy and perfect for beginners! #VMwareExplore #Hackathon #BeginnerProjects
 
-See what you can build out from here. 
+#See what you can build out from here. 
 
 # Connect to vCenter
 Connect-VIServer -Server vcenter_server_name -User username -Password password
