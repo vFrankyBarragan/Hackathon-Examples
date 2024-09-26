@@ -3,7 +3,7 @@
 #See what you can build out from here. 
 
 # Connect to vCenter
-Connect-VIServer -Server vcenter_server_name -User username -Password password
+Connect-VIServer -Server (vCenter or ESXi Host) -User (username) -Password (password)
 
 # Get all VMs and their properties
 $vmList = Get-VM | Select-Object Name, PowerState, NumCpu, MemoryMB, GuestOS, VMHost
